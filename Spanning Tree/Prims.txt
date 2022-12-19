@@ -1,0 +1,13 @@
+MST-PRIM (G, w, r)
+  for each u ∈ V [G]
+  do key [u] ← ∞
+  π [u] ← NIL
+  key [r] ← 0
+  Q ← V [G]
+  While Q ? ∅
+  do u ← EXTRACT - MIN (Q)
+  for each v ∈ Adj [u]
+  do if v ∈ Q and w (u, v) < key [v]
+  then π [v] ← u
+  key [v] ← w (u, v)
+
