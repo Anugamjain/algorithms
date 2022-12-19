@@ -1,0 +1,6 @@
+NAIVE-STRING-MATCHER (T, P)
+  n ← length [T]
+  m ← length [P]
+  for s ← 0 to n -m
+  do if P [1.....m] = T [s + 1....s + m]
+  then print "Pattern occurs with shift" s
