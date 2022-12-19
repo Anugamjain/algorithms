@@ -1,0 +1,8 @@
+FLOYD - WARSHALL (W)
+  n ← rows [W]
+  D0 ← W
+  for k ← 1 to n
+  do for i ← 1 to n     
+  do for j ← 1 to n     
+  do dij(k) ← min (dij(k-1),dik(k-1)+dkj(k-1) )
+  return D(n)

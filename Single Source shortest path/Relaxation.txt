@@ -1,0 +1,10 @@
+INITIALIZE - SINGLE - SOURCE (G, s)
+  for each vertex v ∈ V [G]
+  do d [v] ← ∞
+  π [v] ← NIL
+  d [s] ← 0
+
+RELAX (u, v, w)
+  if d [v] > d [u] + w (u, v)
+  then d [v] ← d [u] + w (u, v)
+  π [v] ← u
